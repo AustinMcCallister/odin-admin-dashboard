@@ -88,7 +88,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   align-items: center;
   font-weight: bold;
   font-size: 1.5em;
-  gap: 2em;
+  gap: 1em;
 }
 
 .accountinfo > svg {
@@ -150,6 +150,121 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .buttons > button:hover:not(:active) {
   background-color: #81A1C1;
+}
+
+.body {
+  display: grid;
+  grid-template: min-content auto / 1fr 22em;
+  grid-column: 2 / -1;
+  grid-row: 2 / 3;
+  padding: 0 2em;
+  gap: 1.5em;
+}
+
+.body-header {
+  color: #434C5E;
+  font-weight: bold;
+  font-size: 1.5em;
+  padding: 1.2em 1em .8em 0em;
+}
+
+.projects {
+  display: grid;
+  grid-template-rows: min-content auto;
+  grid-row: 1 / -1;
+}
+
+.cards {
+  display: grid;
+  grid-template: 14em / repeat(auto-fit, 25em);
+  grid-auto-rows: 14em;
+  gap: 1.5em;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #ECEFF4;
+  border-radius: 1em;
+  box-shadow: 0 0 15px -8px #4C566A;
+  border-left: .4em solid #EBCB8B;
+  padding: 2em 2em;
+}
+
+.card-header {
+  color: #2E3440;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.card-text {
+  color: #4C566A;
+  font-size: 1em;
+  padding: .2em 0 0 0;
+}
+
+.card-buttons {
+  display: flex;
+  justify-self: end;
+  align-self: flex-end;
+  gap: 1.5em;
+}
+
+.card > svg {
+  color: #2E3440;
+  height: 2em;
+  width: auto;
+}
+
+.announcements {
+  display: grid;
+  grid-template-rows: min-content min-content;
+  grid-row: 1 / 2;
+}
+
+.trending {
+  display: grid;
+  grid-template-rows: min-content auto;
+  grid-row: 2 / -1;
+}
+
+.info-card {
+  background-color: #ECEFF4;
+  border-radius: 1em;
+  box-shadow: 0 0 15px -8px #4C566A;
+  padding: 1em 2em;
+}
+
+.info-header {
+  color: #2E3440;
+  font-weight: bold;
+  font-size: .85em;
+  padding: 1em 0 0 0;
+}
+
+.info-text {
+  color: #4C566A;
+  font-size: .85em;
+  padding: .2em 0 1em 0;
+}
+
+.info-card > hr {
+  height: 2px;
+  background-color: #D8DEE9;
+  border: none;
+}
+
+.trending-unit {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.trending-unit > img {
+  height: 3em;
+  width: auto;
+  border-radius: 8em;
 }
 
 .sidebar {
